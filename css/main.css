@@ -21,3 +21,28 @@ body {
 .fs-5 {
   color: white;
 }
+
+/*=====CONTACTOS FORMULARIO=========*/
+#contenedor-formulario {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fbfafa;
+  border-radius: 5px;
+}
+
+
+
+/*=====MEDIA QUERIES PANTALLA ANCHA====*/
+@media (max-width: 1200px) {
+
+}
+/*=====MEDIA QUERIES PANTALLA SM====*/
+@media (max-width: 768px) {
+  
+}
+/*=====MEDIA QUERIES PANTALLA EXTRA SM====*/
+@media (max-width: 576px) {
+  
+}
