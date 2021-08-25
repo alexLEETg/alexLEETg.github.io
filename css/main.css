@@ -7,4 +7,17 @@ body {
     overflow-x: hidden;
 }
 
+#seccion-contacto {
+  background: #1b2a4e;
+  min-height: 200px;
+}
 
+.w-100 {
+  background: #1b2a4e;
+  min-height: 200px;
+}
+
+
+.fs-5 {
+  color: white;
+}
