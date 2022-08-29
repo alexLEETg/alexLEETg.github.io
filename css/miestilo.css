@@ -1,1 +1,11 @@
-body {background-color: coral;}
+body {
+    background-color:  #1b2a4e
+}
+
+h1 {
+    color: white;
+}
+
+footer {
+    min-height: 100px;
+}
