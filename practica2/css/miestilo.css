@@ -7,12 +7,17 @@ h1 {
     font: 20px;
 }
 
+<p> {
+    color: #000;
+    font-size: 12px;
+}
+
 h2 {
     color: #666;
     font-size: 16px;
 }
 
 ul {
-    color: 000;
+    color: #000;
     font-size: 12px;
 }
