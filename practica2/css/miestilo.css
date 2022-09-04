@@ -21,3 +21,33 @@ ul {
     color: #000;
     font-size: 12px;
 }
+
+table, th, td {
+    font-size: 12px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+  }
+
+  thead {
+    color: white;
+    background-color: #666;
+  }
+
+  caption {
+    color: #000;
+    font-size: 14px;
+  }
+
+  tbody {
+    background-color: #fff;
+  }
+
+  tfoot {
+    background-color: #ccc;
+  }
+
+  a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px  ;
+  }
