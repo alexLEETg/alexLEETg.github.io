@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+          <legend>Datos de la incidencia:</legend>
+          <label for="lusuario">Usuario:<br/></label>
+          <input type="text" id="fusuario" name="fusuario" onkeyup="transformarMayuscula()"><br><br>
+          <label for="ldepartamento">Departamento:<br/></label>
+          <select name="departamento" id="departamento" onchange="opcionInvalida()">
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+            <option value="opcion4">Opción 4</option>
+          </select>
+          <label for="ldescripcion"><br/><br/>Descripción:<br/></label>
+          <textarea id="txt-area-descripcion" name="txt-area-descripcion" rows="4" cols="50" onkeyup="transformarPorcentaje()">La impresora del departamento no funciona y avisa de que el tóner de color amarillo está vacío.</textarea>
+          <label for="lcontrasena"><br/><br/>Contraseña:<br/></label>
+          <input type="password" id="fpassword" name="fpassword"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Botones de reset y envío:</legend>
+            <input type="reset" value="Resetear">
+            <input type="submit" value="Enviar">
+          </fieldset>
+      </form>
+
+      <script>
+        function transformarMayuscula() {
+            var x = document.getElementById("fusuario");
+            x.value = x.value.toUpperCase();
+        }
+
+        function opcionInvalida() {
+            var cod = document.getElementById("departamento").value;
+
+            if (cod == "opcion2") {
+                alert("invalido");
+            }
+        }
+
+        function transformarPorcentaje() {
+          var x = document.getElementById("txt-area-descripcion");
+          x.value = x.value.replace(/ /g,"%");
+        }
+      </script>
+</body>
+</html>
